@@ -33,6 +33,6 @@ app.get('/zen', (req, res) => {
     res.send(pickARandomString());
 });
 
-app.listen(3000, () => {
-    console.log('server started at 3000');
+app.listen(8081, () => {
+    console.log('server started at 8081');
 });
