@@ -2,3 +2,16 @@ This is a Node Express REST API server
 It mocks the Github Zen API
 
 So when user requests this API, it sends random strings as response
+
+Endpoint:
+-----------
+/zen - returns random strings
+
+Deployment:
+------------
+ASW Cloud using Elastic BeanStalk
+
+Rate Limiter:
+--------------
+You must prevent the API from DDoS attacks. Denial of Service. 
+If users keep hitting this free API a huge number of times, then my server will crash.
