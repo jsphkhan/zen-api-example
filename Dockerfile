@@ -2,6 +2,9 @@
 
 FROM node:10
 
+#install PM2 inside image
+RUN npm install pm2 -g
+
 #Define Work Directory
 WORKDIR /app
 
@@ -17,6 +20,6 @@ COPY . ./
 #Expose Node port to outside world
 EXPOSE 3000
 
-#Start the Node server
-CMD ["npm", "start"]
+#Start the Node server using PM2
+CMD ["pm2-runtime", "server.js"]
 

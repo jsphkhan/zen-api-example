@@ -9,9 +9,19 @@ Endpoint:
 
 Deployment:
 ------------
+Docker container based inside AWS EC2 instance
 ASW Cloud using Elastic BeanStalk
 
 Rate Limiter:
 --------------
 You must prevent the API from DDoS attacks. Denial of Service. 
 If users keep hitting this free API a huge number of times, then my server will crash.
+
+PM2
+------
+Using PM2 to start node server. 
+Node Process Monitor
+https://pm2.keymetrics.io/docs/usage/docker-pm2-nodejs/
+
+pm2 start server.js
+pm2 stop server
