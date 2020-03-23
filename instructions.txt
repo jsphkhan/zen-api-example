@@ -9,8 +9,8 @@ Endpoint:
 
 Deployment:
 ------------
-Docker container based inside AWS EC2 instance
-ASW Cloud using Elastic BeanStalk
+1. Docker container based inside AWS EC2 instance
+2. AWS Cloud using Elastic BeanStalk and AWS Code Pipeline - this is used right now.
 
 Rate Limiter:
 --------------

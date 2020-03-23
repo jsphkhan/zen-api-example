@@ -17,8 +17,8 @@ RUN npm install
 #COPY the source - server.js
 COPY . ./
 
-#Expose Node port to outside world
-EXPOSE 3000
+#Expose Node Express app port to outside world
+EXPOSE 8081
 
 #Start the Node server using PM2
 CMD ["pm2-runtime", "server.js"]
