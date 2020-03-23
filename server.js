@@ -1,5 +1,7 @@
 var express = require('express');
+var cors = require('cors');
 var app = express();
+
 const randomStrings = [
     "It's not fully shipped until it's fast.",
     "Practicality beats purity.",
@@ -22,6 +24,10 @@ const MAX = randomStrings.length - 1;
 const pickARandomString = () => {
     return randomStrings[Math.floor(Math.random()*MAX + MIN)];
 }
+
+//enable cors
+//Access-Control-Allow-Origin: *
+app.use(cors());
 
 app.get('/', (req, res) => {
     res.send('pong...server is running. Hit the /zen api');
