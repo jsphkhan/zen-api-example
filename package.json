@@ -1,0 +1,15 @@
+{
+  "name": "zen-api-example",
+  "version": "1.0.0",
+  "description": "sends random strings as response",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "node server.js"
+  },
+  "author": "joseph",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
