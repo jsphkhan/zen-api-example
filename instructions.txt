@@ -7,6 +7,14 @@ Endpoint:
 -----------
 /zen - returns random strings
 
+How to run the app:
+----------------------
+1. Using docker: docker run -p 5000:8081 jsphkhan/zen-api-example:version
+2. Using PM2: pm2 start server.js
+3. Using Node: npm start
+
+** If you use docker then : localhost:5000/zen
+
 Deployment:
 ------------
 1. Docker container based inside AWS EC2 instance

@@ -3,6 +3,7 @@
 FROM node:10
 
 #install PM2 inside image
+#By now Node and NPM are installed
 RUN npm install pm2 -g
 
 #Define Work Directory
