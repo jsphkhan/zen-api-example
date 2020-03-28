@@ -1,5 +1,4 @@
 #Using Node 10
-
 FROM node:10
 
 #install PM2 inside image
